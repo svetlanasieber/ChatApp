@@ -28,7 +28,7 @@ namespace ChatApp
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Chat}/{action=Show}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }
